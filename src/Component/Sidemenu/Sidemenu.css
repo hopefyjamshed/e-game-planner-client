@@ -89,9 +89,11 @@
 
     .set-times {
         display: grid;
+        background-color: rgb(239, 235, 235);
         grid-gap: 0px;
-        grid-template-columns: repeat(4, 1fr);
-        height: 30px;
+        grid-template-columns: repeat(6, 1fr);
+        height: 20px;
+        padding-bottom: 20px;
         border-radius: 15px;
         margin-left: 50px;
     }
