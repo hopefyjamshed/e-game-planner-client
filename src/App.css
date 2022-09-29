@@ -11,6 +11,10 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+
+  .page-title {
+    margin-top: 90px;
+  }
 }
 
 .App-header {
@@ -45,9 +49,5 @@
 
 .title {
   text-align: left;
-  margin-left: 30px;
-}
-
-.cards {
   margin-left: 30px;
 }

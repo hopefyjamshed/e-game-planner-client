@@ -11,9 +11,24 @@
 
 }
 
+.page-title {
+    font-size: 40px;
+    color: orange;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.title {
+    text-align: left;
+    margin-left: 30px;
+}
+
+
+
 @media screen and (max-width: 700px) {
     .card-part {
         grid-template-columns: 1fr;
+
     }
 
     .body {
@@ -25,10 +40,19 @@
     }
 
     .side-menu {
-        position: fixed;
+        position: absolute;
         top: 0px;
         text-align: center;
         background-color: #FFE0B3;
+        width: 100%;
+    }
+
+    .page-title {
+        text-align: center;
+    }
+
+    .title {
+        text-align: center;
     }
 
 }
