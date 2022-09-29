@@ -27,33 +27,48 @@
 
 
 @media screen and (max-width: 700px) {
-    .card-part {
-        grid-template-columns: 1fr;
-
-    }
-
     .body {
-        grid-template-columns: 1fr;
+
+        grid-template-columns: 2fr 2fr;
     }
 
     .card-part {
-        margin-left: 0px;
-    }
-
-    .side-menu {
-        position: absolute;
-        top: 0px;
-        text-align: center;
-        background-color: #FFE0B3;
+        grid-template-columns: repeat(1, 2fr);
         width: 100%;
     }
 
     .page-title {
-        text-align: center;
+        font-size: 20px;
+    }
+
+    .football {
+        font-size: 50px;
+        display: block;
     }
 
     .title {
-        text-align: center;
+        font-size: 15px;
     }
+}
+
+
+
+/* .card-part {
+    margin-left: 0px;
 
 }
+
+.side-menu {
+    text-align: center;
+    background-color: #FFE0B3;
+    width: 100%;
+}
+
+
+.page-title {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+} */

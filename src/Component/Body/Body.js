@@ -24,7 +24,7 @@ const Body = () => {
 
             <div>
                 <h1 className='page-title'>
-                    <FontAwesomeIcon style={{ margin: '10px', marginBottom: '0px' }} icon={faFutbol}></FontAwesomeIcon>
+                    <FontAwesomeIcon className='football' icon={faFutbol}></FontAwesomeIcon>
                     Game-Planner</h1>
                 <h2 className='title'>Make your own Gameplan</h2>
                 <div className="card-part">
@@ -39,7 +39,7 @@ const Body = () => {
                 </div>
             </div>
             <div className="side-menu">
-                <Sidemenu className="side" infos={infos}></Sidemenu>
+                <Sidemenu infos={infos}></Sidemenu>
             </div>
         </div>
     );
