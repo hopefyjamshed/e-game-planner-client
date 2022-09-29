@@ -8,11 +8,16 @@ import './Body.css'
 
 const Body = () => {
     const [infos, setInfos] = useState([])
+    const [time, setTine] = useState([])
     useEffect(() => {
         fetch('Data.json')
             .then(res => res.json())
             .then(data => setInfos(data))
     }, [])
+    const Handler = (product) => {
+
+
+    }
 
     return (
         <div className='body'>
@@ -28,12 +33,13 @@ const Body = () => {
                         infos.map(info => <Card
                             key={info.id}
                             info={info}
+                            Handler={Handler}
                         ></Card>)
                     }
                 </div>
             </div>
             <div className="side-menu">
-                <Sidemenu></Sidemenu>
+                <Sidemenu className="side" infos={infos}></Sidemenu>
             </div>
         </div>
     );

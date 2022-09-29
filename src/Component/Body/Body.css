@@ -25,6 +25,7 @@
 
 
 
+
 @media screen and (max-width: 700px) {
     .card-part {
         grid-template-columns: 1fr;

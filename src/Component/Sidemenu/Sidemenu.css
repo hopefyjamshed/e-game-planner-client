@@ -42,3 +42,22 @@
 .h2 {
     margin-bottom: 2px;
 }
+
+.Break {
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.set-times {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(223, 213, 213);
+    height: 60px;
+    border-radius: 30px;
+}
+
+.sideMenu {
+    position: sticky;
+    top: 0px;
+}

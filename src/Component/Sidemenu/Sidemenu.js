@@ -4,13 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import React from 'react';
 import jamsh from '../../jamsh.jpg'
+import Time from '../time/Time';
 import './Sidemenu.css'
 
 import './Sidemenu.css'
 
-const Sidemenu = () => {
+const Sidemenu = (props) => {
+    const { infos } = props
+
     return (
-        <div>
+        <div className='sideMenu'>
             <div className='personal-info'>
                 <img className='jamsh' src={jamsh} alt="" />
                 <div>
@@ -31,7 +34,15 @@ const Sidemenu = () => {
                     <h2 className='h2'>26 <span className='small'>Years</span> </h2>
                     <p className='quantity'>Age</p>
                 </div>
-
+            </div>
+            <h2 className='Break'>Add A Break</h2>
+            <div className='set-times'>
+                {
+                    infos.map(info => <Time
+                        key={info.id}
+                        info={info}
+                    ></Time>)
+                }
             </div>
         </div>
     );
