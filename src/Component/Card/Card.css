@@ -1,0 +1,42 @@
+.card-img {
+    height: 250px;
+    width: 358px;
+    border-radius: 20px;
+    margin-top: 8px;
+}
+
+.card {
+    border: 1px solid gray;
+    width: 380px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.btn {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    border-radius: 0px 0px 20px 20px;
+    border: none;
+    background-color: #FFE0B3;
+}
+
+.btn:hover {
+    background-color: orange;
+    color: white;
+}
+
+.time {
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        width: 100%;
+    }
+
+    .card-img {
+        width: 100%;
+    }
+}
