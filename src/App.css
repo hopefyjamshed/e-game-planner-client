@@ -41,13 +41,3 @@
     transform: rotate(360deg);
   }
 }
-
-.page-title {
-  font-size: 40px;
-  color: orange;
-}
-
-.title {
-  text-align: left;
-  margin-left: 30px;
-}
