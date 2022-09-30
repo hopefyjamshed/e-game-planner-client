@@ -5,12 +5,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import jamsh from '../../jamsh.jpg'
 import Time from '../time/Time';
+
+
 import './Sidemenu.css'
 
 import './Sidemenu.css'
 
 const Sidemenu = (props) => {
     const { infos } = props
+    const { time } = props
+
+
 
     return (
         <div className='sideMenu'>
@@ -44,6 +49,21 @@ const Sidemenu = (props) => {
                     ></Time>)
                 }
             </div>
+
+
+            <div>
+                <h2 className='TotalTimeDetails'>Total Time Details</h2>
+                <div className="total">
+                    <div className="total-time">
+                        <h3>Total Time</h3>
+                    </div>
+                    <div className="total-time">
+                        <h3>{time}</h3>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     );
 };

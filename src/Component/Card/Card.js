@@ -3,8 +3,10 @@ import './Card.css'
 
 
 const Card = (props) => {
+    const { handler } = props
     const { img, id, name, time } = props.info
-    const { Handler } = props
+
+
 
     return (
         <div>
@@ -15,7 +17,7 @@ const Card = (props) => {
                     <h2>{name}</h2>
                     <h3 className='time'>Time required: {time} mins</h3>
                 </div>
-                <button onClick={() => Handler(time)} className='btn'>
+                <button onClick={() => handler(props.info.time)} className='btn'>
                     <p>Add to list</p>
                 </button>
             </div>

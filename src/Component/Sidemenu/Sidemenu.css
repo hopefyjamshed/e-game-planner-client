@@ -57,15 +57,38 @@
     border-radius: 30px;
 }
 
-.sideMenu {
-    position: sticky;
-    top: 0px;
+
+
+.TotalTimeDetails {
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.total {
+    background-color: rgb(221, 212, 212);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @media screen and (max-width:700px) {
+    .sideMenu {
+        width: 100%;
+    }
+
     .personal-info {
         display: flex;
         flex-direction: column;
+    }
+
+    .TotalTimeDetails {
+        font-weight: 500;
+        font-size: 18px;
+        margin-left: 50px;
+        margin-top: 20px;
+        text-align: left;
     }
 
     .personal-data {
@@ -83,8 +106,8 @@
     }
 
     .Break {
-        font-size: 25px;
-        margin-left: 50px;
+        font-size: 19px;
+        text-align: center
     }
 
     .set-times {
