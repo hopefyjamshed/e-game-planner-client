@@ -87,6 +87,7 @@ const Sidemenu = (props) => {
                         <h3>{select}</h3>
                     </div>
                 </div>
+                <button className='activity-btn'>Activity Completed</button>
             </div>
 
 

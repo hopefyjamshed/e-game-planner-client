@@ -1,0 +1,55 @@
+.first {
+    background-color: orange;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 20px;
+
+}
+
+.ans {
+    font-size: 20px;
+}
+
+.ques {}
+
+span {
+    font-weight: 700;
+}
+
+.second {
+    background-color: rgb(223, 213, 195);
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.third {
+    background-color: rgb(234, 198, 131);
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:700px) {
+    .first {
+        width: 100%;
+    }
+
+    .second {
+        width: 100%;
+    }
+
+    .third {
+        width: 100%;
+    }
+
+    .ans {
+        font-size: 8px;
+    }
+
+    .ques {
+        font-size: 10px;
+    }
+
+
+}
