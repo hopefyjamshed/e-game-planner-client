@@ -8,7 +8,7 @@ import './Body.css'
 
 const Body = () => {
     const [infos, setInfos] = useState([])
-    const [time, setTime] = useState([])
+    const [time, setTime] = useState(0)
 
     useEffect(() => {
         fetch('Data.json')

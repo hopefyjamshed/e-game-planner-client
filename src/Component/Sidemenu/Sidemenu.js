@@ -19,7 +19,16 @@ const Sidemenu = (props) => {
     const [select, setSelect] = useState([])
 
     const timeHandler = (value) => {
-        setSelect(value)
+        // localStorage
+        //get the shopping cart from local storage
+        let local = value
+
+        // add quantity
+        // localStorage.setItem('time', value)
+        localStorage.setItem('time', local)
+        const gonda = localStorage.getItem('time')
+        setSelect(gonda)
+
     }
 
 
