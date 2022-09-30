@@ -3,9 +3,10 @@ import './Time.css'
 
 const Time = (props) => {
     const { time } = props.info
+    const { timeHandler } = props
     return (
         <div className='time'>
-            <div className='Time-space'>
+            <div onClick={() => timeHandler(time)} className='Time-space'>
                 <h3 className='round'>{time}</h3>
             </div>
         </div>

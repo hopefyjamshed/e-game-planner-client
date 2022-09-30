@@ -1,8 +1,9 @@
 
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { click } from '@testing-library/user-event/dist/click';
 
-import React from 'react';
+import React, { useState } from 'react';
 import jamsh from '../../jamsh.jpg'
 import Time from '../time/Time';
 
@@ -13,7 +14,13 @@ import './Sidemenu.css'
 
 const Sidemenu = (props) => {
     const { infos } = props
-    const { time } = props
+    const { time } = props;
+
+    const [select, setSelect] = useState([])
+
+    const timeHandler = (value) => {
+        setSelect(value)
+    }
 
 
 
@@ -46,6 +53,7 @@ const Sidemenu = (props) => {
                     infos.map(info => <Time
                         key={info.id}
                         info={info}
+                        timeHandler={timeHandler}
                     ></Time>)
                 }
             </div>
@@ -57,8 +65,17 @@ const Sidemenu = (props) => {
                     <div className="total-time">
                         <h3>Total Time</h3>
                     </div>
-                    <div className="total-time">
+                    <div className="total-timeCount">
                         <h3>{time}</h3>
+                    </div>
+                </div>
+
+                <div className="break-time">
+                    <div className="break-time-title">
+                        <h3>Break Time</h3>
+                    </div>
+                    <div className="break-time-amount">
+                        <h3>{select}</h3>
                     </div>
                 </div>
             </div>

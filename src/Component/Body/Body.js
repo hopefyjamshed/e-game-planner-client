@@ -18,9 +18,11 @@ const Body = () => {
 
 
     const handler = (info) => {
+
         const newTime = JSON.parse(time + info)
+
         setTime(newTime)
-        console.log(newTime)
+
 
 
     }
@@ -54,6 +56,7 @@ const Body = () => {
                 <Sidemenu
                     infos={infos}
                     time={time}
+
                 ></Sidemenu>
             </div>
         </div>
