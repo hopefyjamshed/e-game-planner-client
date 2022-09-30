@@ -18,9 +18,9 @@ const Body = () => {
 
 
     const handler = (info) => {
-
-        const newTime = [JSON.parse(...time) + JSON.parse(info)]
+        const newTime = JSON.parse(time + info)
         setTime(newTime)
+        console.log(newTime)
 
 
     }
