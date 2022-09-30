@@ -17,6 +17,8 @@ const Sidemenu = (props) => {
     const { time } = props;
 
     const [select, setSelect] = useState([])
+    const getItem = localStorage.getItem('time')
+
 
     const timeHandler = (value) => {
         // localStorage
@@ -84,7 +86,7 @@ const Sidemenu = (props) => {
                         <h3>Break Time</h3>
                     </div>
                     <div className="break-time-amount">
-                        <h3>{select}</h3>
+                        <h3>{getItem}</h3>
                     </div>
                 </div>
                 <button className='activity-btn'>Activity Completed</button>
